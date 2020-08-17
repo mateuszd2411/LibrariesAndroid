@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button simpleSliderBtn, progressViewBtn;
+    private Button simpleSliderBtn, progressViewBtn, determinateProgressView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         //init
         simpleSliderBtn = findViewById(R.id.simple_slider_btn);
         progressViewBtn = findViewById(R.id.progress_view_btn);
+        determinateProgressView = findViewById(R.id.determinate_progress_view_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ProgressView.class);
+                startActivity(intent);
+            }
+        });
+
+        determinateProgressView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DeterminateProgressView.class);
                 startActivity(intent);
             }
         });
