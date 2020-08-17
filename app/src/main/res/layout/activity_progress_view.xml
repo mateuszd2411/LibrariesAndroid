@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressView">
+
+
+
+    <com.skydoves.progressview.ProgressView
+        android:id="@+id/progressView1"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        app:progressView_autoAnimate="true"
+        app:progressView_colorBackground="@color/white"
+        app:progressView_colorProgress="@color/skyBlue"
+        app:progressView_labelColorInner="@color/white"
+        app:progressView_labelColorOuter="@color/black"
+        app:progressView_labelSize="13sp"
+        app:progressView_labelSpace="10dp"
+        app:progressView_labelText="Progress: 0%"
+        app:progressView_labelTypeface="bold"
+        app:progressView_max="100"
+        app:progressView_min="0"
+        app:progressView_animation="bounce"
+        app:progressView_padding="1dp"
+        app:progressView_progress="0"
+        app:progressView_progressFromPrevious="true"
+        app:progressView_radius="12dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Go" />
+
+</RelativeLayout>

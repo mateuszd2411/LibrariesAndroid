@@ -1,4 +1,4 @@
-package com.example.slider;
+package com.example.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button simpleSliderBtn;
+    private Button simpleSliderBtn, progressViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         //init
         simpleSliderBtn = findViewById(R.id.simple_slider_btn);
+        progressViewBtn = findViewById(R.id.progress_view_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        progressViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ProgressView.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }

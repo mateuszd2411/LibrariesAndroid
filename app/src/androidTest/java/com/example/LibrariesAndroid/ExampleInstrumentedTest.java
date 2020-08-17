@@ -1,4 +1,4 @@
-package com.example.slider;
+package com.example.LibrariesAndroid;
 
 import android.content.Context;
 
