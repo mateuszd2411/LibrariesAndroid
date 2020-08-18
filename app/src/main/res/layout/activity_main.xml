@@ -8,7 +8,6 @@
 
 
     //Simple Slider
-
     <Button
         android:id="@+id/simple_slider_btn"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     //Progress View
-
     <Button
         android:id="@+id/progress_view_btn"
         android:layout_width="wrap_content"
@@ -32,7 +30,6 @@
         app:layout_constraintTop_toBottomOf="@+id/simple_slider_btn" />
 
     //DeterminateProgressView
-
     <Button
         android:id="@+id/determinate_progress_view_btn"
         android:layout_width="wrap_content"
@@ -42,5 +39,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_view_btn" />
+
+    //FlipDigit
+    <Button
+        android:id="@+id/flip_digit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Flip Digit Clock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/determinate_progress_view_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

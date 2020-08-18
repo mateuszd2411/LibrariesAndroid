@@ -32,6 +32,8 @@ dependencies {
     implementation "com.github.skydoves:progressview:1.0.9"
     //Determinate-Progress-View
     implementation 'com.github.owl-93:DeterminateProgressView:v1.4.0'
+    //Flip_Digit
+    implementation 'com.github.aldrek:Flip_Digit:1.0.1'
 
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
