@@ -36,6 +36,8 @@ dependencies {
     implementation 'com.github.aldrek:Flip_Digit:1.0.1'
     //MotionToast
     implementation 'com.github.Spikeysanju:MotionToast:1.3.2'
+    //Balloon
+    implementation "com.github.skydoves:balloon:1.2.1"
 
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

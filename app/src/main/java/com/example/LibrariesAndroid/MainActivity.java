@@ -1,7 +1,6 @@
 package com.example.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button simpleSliderBtn, progressViewBtn, determinateProgressView, flipDigitClock, motionToast;
+    private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn, motionToastBtn, balloonBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
         //init
         simpleSliderBtn = findViewById(R.id.simple_slider_btn);
         progressViewBtn = findViewById(R.id.progress_view_btn);
-        determinateProgressView = findViewById(R.id.determinate_progress_view_btn);
-        flipDigitClock = findViewById(R.id.flip_digit_btn);
-        motionToast = findViewById(R.id.motion_toast_btn);
+        determinateProgressViewBtn = findViewById(R.id.determinate_progress_view_btn);
+        flipDigitClockBtn = findViewById(R.id.flip_digit_btn);
+        motionToastBtn = findViewById(R.id.motion_toast_btn);
+        balloonBtn = findViewById(R.id.balloon_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        determinateProgressView.setOnClickListener(new View.OnClickListener() {
+        determinateProgressViewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DeterminateProgressView.class);
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        flipDigitClock.setOnClickListener(new View.OnClickListener() {
+        flipDigitClockBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FlipDigitClock.class);
@@ -57,10 +57,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        motionToast.setOnClickListener(new View.OnClickListener() {
+        motionToastBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MotionToast.class);
+                startActivity(intent);
+            }
+        });
+
+        balloonBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Balloon.class);
                 startActivity(intent);
             }
         });
