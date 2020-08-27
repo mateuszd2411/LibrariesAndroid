@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
@@ -24,20 +25,17 @@ public class Balloon extends AppCompatActivity {
 
         final com.skydoves.balloon.Balloon balloon = new com.skydoves.balloon.Balloon.Builder(getApplicationContext())
                 .setArrowSize(10)
-                .setArrowOrientation(ArrowOrientation.TOP)
-                .setArrowConstraints(ArrowConstraints.ALIGN_ANCHOR)
-                .setArrowPosition(0.5f)
+                .setArrowOrientation(ArrowOrientation.BOTTOM)
                 .setArrowVisible(true)
-                .setWidthRatio(1.0f)
+                .setWidthRatio(0.0f)
                 .setHeight(65)
                 .setTextSize(15f)
-                .setCornerRadius(4f)
-                .setAlpha(0.9f)
+                .setArrowPosition(0.5f)
+                .setCornerRadius(10f)
                 .setText("You can access your profile from now on.")
                 .setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.colorAccent))
-                .setTextIsHtml(true)
                 .setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.colorPrimary))
-                .setBalloonAnimation(BalloonAnimation.FADE)
+                .setBalloonAnimation(BalloonAnimation.CIRCULAR)
                 .build();
 
 
@@ -45,6 +43,13 @@ public class Balloon extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 balloon.showAlignBottom(button);
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        balloon.dismiss();
+                    }
+                }, 2000);
             }
         });
     }
