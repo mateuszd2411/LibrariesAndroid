@@ -7,7 +7,7 @@
     android:padding="20dp"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context="com.example.LibrariesAndroid.FlipDigitClock">
+    tools:context="com.ganarstudio.LibrariesAndroid.FlipDigitClock">
 
     <com.aldrek.digitflip.FlipWidget
         android:id="@+id/hours"

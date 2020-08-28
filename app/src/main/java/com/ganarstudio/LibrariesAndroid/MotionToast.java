@@ -1,4 +1,4 @@
-package com.example.LibrariesAndroid;
+package com.ganarstudio.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;

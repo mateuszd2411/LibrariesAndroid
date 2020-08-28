@@ -1,4 +1,4 @@
-package com.example.LibrariesAndroid;
+package com.ganarstudio.LibrariesAndroid;
 
 import android.content.Context;
 

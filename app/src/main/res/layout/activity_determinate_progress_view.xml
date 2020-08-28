@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.LibrariesAndroid.DeterminateProgressView">
+    tools:context="com.ganarstudio.LibrariesAndroid.DeterminateProgressView">
 
     <com.owl93.dpb.CircularProgressView
         android:id="@+id/progress"

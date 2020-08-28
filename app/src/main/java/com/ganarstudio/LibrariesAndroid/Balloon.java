@@ -1,4 +1,4 @@
-package com.example.LibrariesAndroid;
+package com.ganarstudio.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 
-import com.skydoves.balloon.ArrowConstraints;
 import com.skydoves.balloon.ArrowOrientation;
 import com.skydoves.balloon.BalloonAnimation;
 

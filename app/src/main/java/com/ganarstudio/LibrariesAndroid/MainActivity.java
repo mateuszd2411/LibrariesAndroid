@@ -1,4 +1,4 @@
-package com.example.LibrariesAndroid;
+package com.ganarstudio.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,7 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn, motionToastBtn, balloonBtn;
+    private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn,
+            motionToastBtn, balloonBtn, slideDatePickerBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         flipDigitClockBtn = findViewById(R.id.flip_digit_btn);
         motionToastBtn = findViewById(R.id.motion_toast_btn);
         balloonBtn = findViewById(R.id.balloon_btn);
+        slideDatePickerBtn = findViewById(R.id.slide_date_picker_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -73,5 +75,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        slideDatePickerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SlideDatePicker.class);
+                startActivity(intent);
+            }
+        });
     }
 }

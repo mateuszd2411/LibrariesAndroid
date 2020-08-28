@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.LibrariesAndroid">
+    package="com.ganarstudio.LibrariesAndroid">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Balloon"></activity>
-        <activity android:name=".MotionToast" />
-        <activity android:name=".FlipDigitClock" />
-        <activity android:name=".DeterminateProgressView" />
-        <activity android:name=".ProgressView" />
-        <activity android:name=".SimpleSliderActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.ganarstudio.LibrariesAndroid.SlideDatePicker"></activity>
+        <activity android:name="com.ganarstudio.LibrariesAndroid.Balloon" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.MotionToast" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.FlipDigitClock" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.DeterminateProgressView" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.ProgressView" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.SimpleSliderActivity" />
+        <activity android:name="com.ganarstudio.LibrariesAndroid.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

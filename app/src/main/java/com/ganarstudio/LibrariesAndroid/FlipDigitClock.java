@@ -1,17 +1,14 @@
-package com.example.LibrariesAndroid;
+package com.ganarstudio.LibrariesAndroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 
-import com.aldrek.digitflip.FlipDigit;
 import com.aldrek.digitflip.FlipWidget;
 
 import java.util.Calendar;
-import java.util.Random;
 
 public class FlipDigitClock extends AppCompatActivity {
 
