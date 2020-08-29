@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ganarstudio.LibrariesAndroid.TextHighlighter">
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_search"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="18"
+        android:hint="search"
+        android:inputType="text"
+        android:text="" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:text="Duke Nukem: Manhattan Project is a platform game developed by Sunstorm Interactive, produced by 3D Realms, and published by Arush Entertainment.[4] It was released on Microsoft Windows on May 14, 2002, in North America and on June 14, 2002, in Europe. A port of the game would be released through Xbox Live Arcade from Xbox 360 on June 23, 2010, by 3D Realms directly, followed by the iOS port on January 9, 2014.
+
+                Duke Nukem: Manhattan Project is a platform game developed by Sunstorm Interactive, produced by 3D Realms, and published by Arush Entertainment.[4] It was released on Microsoft Windows on May 14, 2002, in North America and on June 14, 2002, in Europe. A port of the game would be released through Xbox Live Arcade from Xbox 360 on June 23, 2010, by 3D Realms directly, followed by the iOS port on January 9, 2014.
+
+                Duke Nukem: Manhattan Project is a platform game developed by Sunstorm Interactive, produced by 3D Realms, and published by Arush Entertainment.[4] It was released on Microsoft Windows on May 14, 2002, in North America and on June 14, 2002, in Europe. A port of the game would be released through Xbox Live Arcade from Xbox 360 on June 23, 2010, by 3D Realms directly, followed by the iOS port on January 9, 2014.
+
+                Duke Nukem: Manhattan Project is a platform game developed by Sunstorm Interactive, produced by 3D Realms, and published by Arush Entertainment.[4] It was released on Microsoft Windows on May 14, 2002, in North America and on June 14, 2002, in Europe. A port of the game would be released through Xbox Live Arcade from Xbox 360 on June 23, 2010, by 3D Realms directly, followed by the iOS port on January 9, 2014.
+
+                Duke Nukem: Manhattan Project is a platform game developed by Sunstorm Interactive, produced by 3D Realms, and published by Arush Entertainment.[4] It was released on Microsoft Windows on May 14, 2002, in North America and on June 14, 2002, in Europe. A port of the game would be released through Xbox Live Arcade from Xbox 360 on June 23, 2010, by 3D Realms directly, followed by the iOS port on January 9, 2014." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

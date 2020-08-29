@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ganarstudio.LibrariesAndroid.SlideDatePicker"></activity>
-        <activity android:name="com.ganarstudio.LibrariesAndroid.Balloon" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.MotionToast" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.FlipDigitClock" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.DeterminateProgressView" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.ProgressView" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.SimpleSliderActivity" />
-        <activity android:name="com.ganarstudio.LibrariesAndroid.MainActivity">
+        <activity android:name=".TextHighlighter"
+            android:windowSoftInputMode="adjustNothing|stateHidden"></activity>
+        <activity android:name=".SlideDatePicker" />
+        <activity android:name=".Balloon" />
+        <activity android:name=".MotionToast" />
+        <activity android:name=".FlipDigitClock" />
+        <activity android:name=".DeterminateProgressView" />
+        <activity android:name=".ProgressView" />
+        <activity android:name=".SimpleSliderActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

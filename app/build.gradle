@@ -40,6 +40,8 @@ dependencies {
     implementation "com.github.skydoves:balloon:1.2.1"
     //material-slide-date-picker
     implementation 'com.github.niwattep:material-slide-date-picker:v2.0.0'
+    //TextHighlighter
+    implementation 'com.xeoh.android:text-highlighter:1.0.3'
 
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
