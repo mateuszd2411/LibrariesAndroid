@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn,
-            motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn;
+            motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn, dropDownViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         balloonBtn = findViewById(R.id.balloon_btn);
         slideDatePickerBtn = findViewById(R.id.slide_date_picker_btn);
         textHighlighterBtn = findViewById(R.id.text_highlighter_btn);
+        dropDownViewBtn = findViewById(R.id.drop_down_view_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TextHighlighter.class);
+                startActivity(intent);
+            }
+        });
+
+        dropDownViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DropDownViewTxt.class);
                 startActivity(intent);
             }
         });

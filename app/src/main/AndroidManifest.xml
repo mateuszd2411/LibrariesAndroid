@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TextHighlighter"
-            android:windowSoftInputMode="adjustNothing|stateHidden"></activity>
+        <activity android:name=".DropDownViewTxt"></activity>
+        <activity
+            android:name=".TextHighlighter"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
         <activity android:name=".SlideDatePicker" />
         <activity android:name=".Balloon" />
         <activity android:name=".MotionToast" />

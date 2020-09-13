@@ -42,6 +42,8 @@ dependencies {
     implementation 'com.github.niwattep:material-slide-date-picker:v2.0.0'
     //TextHighlighter
     implementation 'com.xeoh.android:text-highlighter:1.0.3'
+    //DropDownView
+    implementation 'com.github.AnthonyFermin:DropDownView:1.0.1'
 
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
