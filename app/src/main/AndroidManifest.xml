@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DropDownViewTxt"></activity>
+        <activity android:name=".StyleableToastLibrary"></activity>
+        <activity android:name=".DropDownViewTxt" />
         <activity
             android:name=".TextHighlighter"
             android:windowSoftInputMode="adjustNothing|stateHidden" />
