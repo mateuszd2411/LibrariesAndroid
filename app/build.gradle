@@ -46,6 +46,8 @@ dependencies {
     implementation 'com.github.AnthonyFermin:DropDownView:1.0.1'
     //StyleableToast
     implementation 'com.muddzdev:styleabletoast:2.2.4'
+    //CountryCurrencyPicker
+    implementation 'com.github.scrounger:countrycurrencypicker:1.1.1'
 
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

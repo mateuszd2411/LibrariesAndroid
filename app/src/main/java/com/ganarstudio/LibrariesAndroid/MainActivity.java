@@ -10,7 +10,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn,
-            motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn, dropDownViewBtn, styleableToastBtn;
+            motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn, dropDownViewBtn, styleableToastBtn,
+            countryCurrencyPickerBtn
+            ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         textHighlighterBtn = findViewById(R.id.text_highlighter_btn);
         dropDownViewBtn = findViewById(R.id.drop_down_view_btn);
         styleableToastBtn = findViewById(R.id.style_able_toast_btn);
+        countryCurrencyPickerBtn = findViewById(R.id.country_currency_picker_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -106,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, StyleableToastLibrary.class);
+                startActivity(intent);
+            }
+        });
+
+        countryCurrencyPickerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CountryCurrencyPickerLibrary.class);
                 startActivity(intent);
             }
         });
