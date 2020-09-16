@@ -48,6 +48,8 @@ dependencies {
     implementation 'com.muddzdev:styleabletoast:2.2.4'
     //CountryCurrencyPicker
     implementation 'com.github.scrounger:countrycurrencypicker:1.1.1'
+    //android-toggle
+    implementation 'com.github.angads25:toggle:1.1.0'
 
 
     configurations {
