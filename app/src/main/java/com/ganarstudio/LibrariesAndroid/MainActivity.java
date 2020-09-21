@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn,
             motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn, dropDownViewBtn, styleableToastBtn,
-            countryCurrencyPickerBtn, androidToggleBtn;
+            countryCurrencyPickerBtn, androidToggleBtn, coloredShadowImageViewBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         styleableToastBtn = findViewById(R.id.style_able_toast_btn);
         countryCurrencyPickerBtn = findViewById(R.id.country_currency_picker_btn);
         androidToggleBtn = findViewById(R.id.android_toggle_btn);
+        coloredShadowImageViewBtn = findViewById(R.id.colored_shadow_image_view_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -125,6 +126,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, AndroidToggleLibrary.class);
+                startActivity(intent);
+            }
+        });
+
+        coloredShadowImageViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ColoredShadowImageViewLibrary.class);
                 startActivity(intent);
             }
         });

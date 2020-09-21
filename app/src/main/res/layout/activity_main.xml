@@ -149,5 +149,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/country_currency_picker_btn" />
 
+    //ColoredShadowImageView
+        <Button
+            android:id="@+id/colored_shadow_image_view_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Colored Shadow ImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/android_toggle_btn" />
     </LinearLayout>
 </ScrollView>
