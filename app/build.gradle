@@ -52,6 +52,8 @@ dependencies {
     implementation 'com.github.angads25:toggle:1.1.0'
     //ColoredShadowImageView
     implementation 'com.github.armcha:ColoredShadowImageView:1.1.0'
+    //ColorPickerPreference
+    implementation "com.github.skydoves:colorpickerpreference:2.0.4"
 
 
     configurations {
