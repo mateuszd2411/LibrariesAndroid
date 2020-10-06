@@ -54,6 +54,8 @@ dependencies {
     implementation 'com.github.armcha:ColoredShadowImageView:1.1.0'
     //ColorPickerPreference
     implementation "com.github.skydoves:colorpickerpreference:2.0.4"
+    //MultiWaveHeader
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0'
 
 
     configurations {
