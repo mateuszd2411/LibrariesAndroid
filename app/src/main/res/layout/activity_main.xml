@@ -196,5 +196,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/color_picker_preference_btn" />
+
+        //FluentAppBar
+
+        <Button
+            android:id="@+id/fluent_appBar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Fluent AppBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multi_wave_header_btn" />
+
     </LinearLayout>
 </ScrollView>

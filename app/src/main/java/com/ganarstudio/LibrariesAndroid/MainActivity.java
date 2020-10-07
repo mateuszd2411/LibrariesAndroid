@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private Button simpleSliderBtn, progressViewBtn, determinateProgressViewBtn, flipDigitClockBtn,
             motionToastBtn, balloonBtn, slideDatePickerBtn, textHighlighterBtn, dropDownViewBtn, styleableToastBtn,
             countryCurrencyPickerBtn, androidToggleBtn, coloredShadowImageViewBtn, colorPickerPreferenceBtn,
-            multiWaveHeaderBtn;
+            multiWaveHeaderBtn, fluentAppBarBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         coloredShadowImageViewBtn = findViewById(R.id.colored_shadow_image_view_btn);
         colorPickerPreferenceBtn = findViewById(R.id.color_picker_preference_btn);
         multiWaveHeaderBtn = findViewById(R.id.multi_wave_header_btn);
+        fluentAppBarBtn = findViewById(R.id.fluent_appBar_btn);
 
         //click listener
         simpleSliderBtn.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +154,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MultiWaveHeaderLibrary.class);
+                startActivity(intent);
+            }
+        });
+
+        fluentAppBarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FluentAppBarLibrary.class);
                 startActivity(intent);
             }
         });

@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MultiWaveHeaderLibrary"></activity>
-        <activity android:name=".ColorPickerPreference"></activity>
+        <activity android:name=".FluentAppBarLibrary"></activity>
+        <activity android:name=".MultiWaveHeaderLibrary" />
+        <activity android:name=".ColorPickerPreference" />
         <activity android:name=".ColoredShadowImageViewLibrary" />
         <activity android:name=".AndroidToggleLibrary" />
         <activity android:name=".CountryCurrencyPickerLibrary" />

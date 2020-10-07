@@ -56,6 +56,9 @@ dependencies {
     implementation "com.github.skydoves:colorpickerpreference:2.0.4"
     //MultiWaveHeader
     implementation 'com.scwang.wave:MultiWaveHeader:1.0.0'
+    //fluentAppBar
+    implementation 'com.vlstr:fluentappbar:1.1.0'
+
 
 
     configurations {
