@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ganarstudio.LibrariesAndroid.FluentAppBarLibrary">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.vlstr.fluentappbar.FluentAppBar
+        android:id="@+id/fluent_app_bar"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        app:fluent_background_colour="@color/colorPrimary"
+        app:fluent_foreground_colour="#FFFFFF"
+
+        app:fluent_app_bar_type="FULL_FLUENT"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    </com.vlstr.fluentappbar.FluentAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

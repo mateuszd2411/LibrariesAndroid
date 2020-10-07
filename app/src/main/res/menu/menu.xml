@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_all24"
+        android:id="@+id/nav_all"
+        android:title="All" />
+
+    <item
+        android:icon="@drawable/ic_album"
+        android:id="@+id/nav_album"
+        android:title="Albums" />
+
+    <item
+        android:icon="@drawable/ic_keywords"
+        android:id="@+id/nav_keywords"
+        android:title="Keywords" />
+</menu>

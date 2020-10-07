@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_sync"
+        android:id="@+id/menu_sync"
+        android:title="Show Sync Status" />
+
+    <item
+        android:icon="@drawable/ic_assistant"
+        android:id="@+id/menu_assistant"
+        android:title="Photo Assistant" />
+
+    <item
+        android:icon="@drawable/ic_shared"
+        android:id="@+id/menu_shared"
+        android:title="Shared Photos" />
+</menu>
