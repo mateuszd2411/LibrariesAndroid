@@ -58,6 +58,8 @@ dependencies {
     implementation 'com.scwang.wave:MultiWaveHeader:1.0.0'
     //fluentAppBar
     implementation 'com.vlstr:fluentappbar:1.1.0'
+    //WhatsNew
+    implementation 'io.github.tonnyl:whatsnew:0.1.1'
 
 
 
